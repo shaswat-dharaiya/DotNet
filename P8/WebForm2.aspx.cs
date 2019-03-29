@@ -24,7 +24,7 @@ namespace WebApplication1
         void getData() {
             string s= ((Site1)Master).TxtSearch.Text;
             Console.WriteLine(s);
-            string source = @"Data Source=Mishil-Patel\SQLExpress;Initial Catalog=DemoDb;Integrated Security=True;Pooling=False";
+            string source = @"Data Source=Shaswat-Dharaiya\SQLExpress;Initial Catalog=DemoDb;Integrated Security=True;Pooling=False";
             string select = "select * from tblstudent where fname like '%"+ ((Site1)Master).TxtSearch.Text + "%'";
             SqlConnection con = new SqlConnection(source);
             SqlCommand cmd = new SqlCommand(select, con);
